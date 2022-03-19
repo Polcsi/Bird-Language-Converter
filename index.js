@@ -72,9 +72,11 @@ const resultDisplay = document.querySelector(".result");
 function handleSubmit(e) {
   e.preventDefault();
   let formValue = e.target[0].value;
-  if (!isBirdLanguage(formValue)) {
-    resultDisplay.textContent = convertToBirdLanguage(formValue);
-  } else {
-    resultDisplay.textContent = convertToNormalLanguage(formValue);
+  if (formValue) {
+    if (!isBirdLanguage(formValue)) {
+      resultDisplay.textContent = convertToBirdLanguage(formValue);
+    } else {
+      resultDisplay.textContent = convertToNormalLanguage(formValue);
+    }
   }
 }
