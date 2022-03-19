@@ -27,7 +27,7 @@ body {
   flex-direction: column;
   gap: 0.5rem;
 }
-button {
+.btn-container button {
   padding: 0.5rem;
   background: black;
   color: white;
@@ -40,7 +40,7 @@ button {
   width: 200px;
   transition: all ease 0.1s;
 }
-button:hover {
+.btn-container button:hover {
   background: white;
   color: black;
   transform: scale(0.9);
@@ -55,9 +55,32 @@ button:hover {
 .result {
   border: 1px solid black;
   border-radius: 5px;
-  padding: 0.8rem;
+  padding: 2rem 0.9rem 0.8rem 0.9rem;
   width: 100%;
   text-align: justify;
+  position: relative;
+}
+.result p {
+  line-height: 1.5;
+}
+.copy {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  color: rgb(38, 62, 85);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color ease 0.2s;
+}
+.copy:hover {
+  color: #a09c9c;
+}
+.copied {
+  color: rgb(7, 197, 7);
 }
 textarea {
   width: 100%;
@@ -67,6 +90,7 @@ textarea {
   font-size: 1.1rem;
   border-radius: 5px;
   outline: none;
+  background: #fdfcfc;
 }
 .examples {
   display: grid;
