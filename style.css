@@ -1,0 +1,102 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+}
+body {
+  display: block;
+  overflow: auto;
+  font-family: sans-serif;
+}
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+button {
+  padding: 0.5rem;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 200px;
+  transition: all ease 0.1s;
+}
+button:hover {
+  background: white;
+  color: black;
+  transform: scale(0.9);
+}
+.header {
+  width: 95%;
+  max-width: 1200px;
+  display: grid;
+  grid-gap: 1rem;
+  padding-top: 3rem;
+}
+.result {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.8rem;
+  width: 100%;
+  text-align: justify;
+}
+textarea {
+  width: 100%;
+  height: 40vh;
+  resize: vertical;
+  padding: 0.3rem 0.4rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  outline: none;
+}
+.examples {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.examples h1 {
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 2rem;
+  max-width: 1200px;
+  width: 95%;
+  margin: auto;
+}
+.wrapper div {
+  max-width: 600px;
+  width: 60%;
+}
+.wrapper div p {
+  line-height: 1.6;
+  text-align: justify;
+}
+.title h1 {
+  text-align: left;
+}
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
