@@ -28,7 +28,7 @@ const text = [
 function convertToNormalLanguage(str) {
   let charStr = str.split("");
   for (let i = 0; i < charStr.length; ++i) {
-    chars.every(function (el, index) {
+    chars.every(function (el) {
       if (
         charStr[i].includes(el) &&
         charStr[i + 1] === "v" &&
@@ -44,7 +44,6 @@ function convertToNormalLanguage(str) {
 
 function convertToBirdLanguage(str) {
   let charStr = str.split("");
-  console.log(charStr);
   for (let i = 0; i < str.length; ++i) {
     chars.every(function (el) {
       if (str[i].includes(el)) {
@@ -64,7 +63,7 @@ function isBirdLanguage(str) {
   let charStr = str.split("");
   let isTrue = false;
   for (let i = 0; i < charStr.length; ++i) {
-    chars.every(function (el, index) {
+    chars.every(function (el) {
       if (
         charStr[i].includes(el) &&
         charStr[i + 1] === "v" &&
